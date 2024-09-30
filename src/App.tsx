@@ -9,14 +9,19 @@ const App = () => {
 
   return (
     <CardContext.Provider value={{num, setnum}}>
-    <div className="m-3">
-    <button onClick={()=>{
-            setnum(num+1)
-          }}>
-              Click Me
-          </button>
-          <Card/>
-    </div>
+    
+<div className="flex flex-wrap min-h-screen items-center">
+                <div className="w-full">
+                    <div className="w-full max-w-sm mx-auto flex justify-end mb-4">
+                        
+                    </div>
+
+                    <div className="w-full max-w-sm mx-auto">
+                       
+                    </div>
+                </div>
+            </div>
+
     </CardContext.Provider>
   )
 }
