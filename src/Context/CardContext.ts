@@ -1,12 +1,17 @@
 import React from "react";
 type CardCont ={
     
-        setnum:React.Dispatch<React.SetStateAction<number>>
-        num:number
+        ThemeMode : string,
+        darkTheme : ()=>void,
+        lightTheme : ()=>void 
     
 }
 
-const CardContext = React.createContext<CardCont>({}as CardCont)
+const CardContext = React.createContext<CardCont>({
+        ThemeMode: "light",
+        darkTheme : ():void=>{},
+        lightTheme : ():void=>{} 
+}as CardCont)
 
 
 
